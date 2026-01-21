@@ -1,0 +1,44 @@
+/* ANL Website Styles */
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure content takes full height */
+main {
+    flex: 1;
+}
+
+/* Button hover effects */
+button, a.button {
+    transition: all 0.3s ease;
+}
+
+button:hover, a.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 168, 225, 0.2);
+}
+
+/* Card hover effects */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Image hover effects */
+img {
+    transition: transform 0.3s ease;
+}
+
+/* Gradient text */
+.gradient-text {
+    background: linear-gradient(135deg, #00A8E1 0%, #0088C1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
