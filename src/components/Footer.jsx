@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -9,107 +8,80 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div>
+      {/* Main Footer Content */}
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Left Section - Solutions */}
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-white mb-4">Solutions</h2>
+            <p className="text-gray-300 text-sm leading-relaxed mb-6">
+              Together with our professional team, we work to provide excellence for our customers.
+            </p>
+            
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-white">INDOFURNISHING</h3>
+              <h4 className="text-lg font-semibold text-gray-300">Indofurnishing Creations</h4>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                At INDOFURNISHING we examine production stages even more stringent than industry standards, 
+                and we will only offer approved elements to the market if they meet our quality and safety standards.
+              </p>
+            </div>
+          </div>
+
+          {/* Right Section - Logo & CTA */}
+          <div className="flex flex-col items-center justify-center space-y-6">
             <div className="flex items-center mb-4">
-              <svg className="w-10 h-10" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 70 L50 30 L80 70 Z" fill="#00A8E1"/>
-                <path d="M30 70 L50 45 L70 70 Z" fill="#0088C1"/>
-              </svg>
-              <div className="ml-2">
-                <div className="text-xl font-bold">ANL</div>
-                <div className="text-xs text-gray-400">ARTIK NOVA LINDO</div>
+              <img
+                src="/logo-anl.png"
+                alt="PT ARTIK NOVA LINDO"
+                className="h-16 w-auto brightness-0 invert"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="flex items-center" style={{ display: 'none' }}>
+                <div className="text-2xl font-bold text-white">PT ARTIK NOVA LINDO</div>
               </div>
             </div>
-            <p className="text-sm text-gray-400 mb-4">
-              PT ARTIK NOVA LINDO is a General Contractor specializing in construction and installation services.
-            </p>
+            <Link
+              to="/contact-us"
+              className="bg-[#2CB6E9] text-white px-8 py-3 rounded-md hover:bg-[#0088C1] transition-colors font-semibold text-lg"
+            >
+              Consultation Schedule
+            </Link>
           </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/" className="text-sm text-gray-400 hover:text-[#00A8E1] transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about-us" className="text-sm text-gray-400 hover:text-[#00A8E1] transition-colors">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/solutions" className="text-sm text-gray-400 hover:text-[#00A8E1] transition-colors">
-                  Solutions
-                </Link>
-              </li>
-              <li>
-                <Link to="/partners" className="text-sm text-gray-400 hover:text-[#00A8E1] transition-colors">
-                  Partners
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact-us" className="text-sm text-gray-400 hover:text-[#00A8E1] transition-colors">
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
-              <li className="text-sm text-gray-400">Construction Services</li>
-              <li className="text-sm text-gray-400">Civil Engineering</li>
-              <li className="text-sm text-gray-400">Building Maintenance</li>
-              <li className="text-sm text-gray-400">Design & Consultant</li>
-              <li className="text-sm text-gray-400">Waterproofing</li>
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start text-sm text-gray-400">
-                <MapPin className="w-4 h-4 mr-2 mt-1 flex-shrink-0" />
-                <span>Jl. Hang Jebat, Batu Besar Batam 29122 Kepulauan Riau</span>
-              </li>
-              <li className="flex items-center text-sm text-gray-400">
-                <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
-                <span>+62 778 4804 900</span>
-              </li>
-              <li className="flex items-center text-sm text-gray-400">
-                <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
-                <span>+62 811 7765 900</span>
-              </li>
-              <li className="flex items-center text-sm text-gray-400">
-                <Mail className="w-4 h-4 mr-2 flex-shrink-0" />
-                <a href="mailto:info@artik.co.id" className="hover:text-[#00A8E1] transition-colors">
-                  info@artik.co.id
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-gray-400">
-            © 2024 PT ARTIK NOVA LINDO. All rights reserved.
-          </p>
-          <button
-            onClick={scrollToTop}
-            className="mt-4 md:mt-0 text-sm text-gray-400 hover:text-[#00A8E1] transition-colors"
-          >
-            Back to top ↑
-          </button>
         </div>
       </div>
+
+      {/* Footer Bottom */}
+      <div className="bg-gray-800 border-t border-gray-700">
+        <div className="container mx-auto px-4 py-6">
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+            <p className="mb-4 md:mb-0">
+              Copyright © 2024 PT ARTIK NOVA LINDO
+            </p>
+            <div className="flex items-center space-x-2">
+              <span>GENERAL SUPPLIER</span>
+              <span>│</span>
+              <span>CONTRACTOR</span>
+              <span>│</span>
+              <span>CONSTRUCTION</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll to Top Button */}
+      <button
+        onClick={scrollToTop}
+        className="fixed bottom-8 right-8 bg-[#2CB6E9] text-white p-3 rounded-full shadow-lg hover:bg-[#0088C1] transition-colors z-40"
+        aria-label="Scroll to top"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+      </button>
     </footer>
   );
 };

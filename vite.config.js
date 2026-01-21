@@ -8,6 +8,7 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+    extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
   },
   // TAMBAHKAN BAGIAN INI
   optimizeDeps: {
@@ -18,9 +19,17 @@ export default defineConfig({
     },
   },
   esbuild: {
+    // Ini memaksa semua file .js dibaca sebagai .jsx
     loader: 'jsx',
     include: /src\/.*\.js$/,
     exclude: [],
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      loader: {
+        '.js': 'jsx',
+      },
+    },
   },
   server: {
     port: 3000,

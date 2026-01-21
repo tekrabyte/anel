@@ -7,19 +7,20 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[600px] bg-gradient-to-r from-gray-50 to-blue-50">
-        <div className="container mx-auto px-4 h-full">
+      <section className="relative h-[600px] bg-gradient-to-r from-[#2CB6E9] via-[#0088C1] to-[#2CB6E9]">
+        <div className="absolute inset-0 bg-black opacity-10"></div>
+        <div className="container mx-auto px-4 h-full relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 h-full items-center">
-            <div className="space-y-6">
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            <div className="space-y-6 text-white">
+              <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                 Construction and<br />Installation Services
               </h1>
-              <p className="text-lg text-gray-600">
+              <p className="text-xl text-white/90">
                 Take charge of your business continuity with innovative solutions.
               </p>
               <Link
                 to="/solutions"
-                className="inline-block bg-[#00A8E1] text-white px-8 py-3 rounded-md hover:bg-[#0088C1] transition-all duration-300 transform hover:scale-105"
+                className="inline-block bg-white text-[#2CB6E9] px-8 py-3 rounded-md hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 font-semibold"
               >
                 Learn More
               </Link>
@@ -41,7 +42,7 @@ const Home = () => {
           <div className="text-center mb-12">
             <p className="text-sm text-gray-500 uppercase tracking-wider mb-2">WHAT WE DO</p>
             <h2 className="text-4xl font-bold text-gray-900">Services</h2>
-            <div className="w-24 h-1 bg-[#00A8E1] mx-auto mt-4"></div>
+            <div className="w-24 h-1 bg-[#2CB6E9] mx-auto mt-4"></div>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
               New build in residential, commercial and industrial development:
             </p>
@@ -56,7 +57,7 @@ const Home = () => {
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">{service.title}</h3>
                 <a
                   href={service.link}
-                  className="text-[#00A8E1] hover:text-[#0088C1] inline-flex items-center text-sm font-medium transition-colors"
+                  className="text-[#2CB6E9] hover:text-[#0088C1] inline-flex items-center text-sm font-medium transition-colors"
                 >
                   Learn more <ArrowRight className="w-4 h-4 ml-1" />
                 </a>
@@ -67,7 +68,7 @@ const Home = () => {
           <div className="text-center mt-8">
             <a
               href="mailto:info@artik.co.id"
-              className="inline-block bg-[#00A8E1] text-white px-8 py-3 rounded-md hover:bg-[#0088C1] transition-colors"
+              className="inline-block bg-[#2CB6E9] text-white px-8 py-3 rounded-md hover:bg-[#0088C1] transition-colors font-semibold"
             >
               Support
             </a>
@@ -81,7 +82,7 @@ const Home = () => {
           <div className="text-center mb-12">
             <p className="text-sm text-gray-500 uppercase tracking-wider mb-2">News Headlines</p>
             <h2 className="text-4xl font-bold text-gray-900">News Headlines</h2>
-            <div className="w-24 h-1 bg-[#00A8E1] mx-auto mt-4"></div>
+            <div className="w-24 h-1 bg-[#2CB6E9] mx-auto mt-4"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -103,7 +104,7 @@ const Home = () => {
                     href={article.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#00A8E1] hover:text-[#0088C1] inline-flex items-center text-sm font-medium transition-colors"
+                    className="text-[#2CB6E9] hover:text-[#0088C1] inline-flex items-center text-sm font-medium transition-colors"
                   >
                     Learn more <ArrowRight className="w-4 h-4 ml-1" />
                   </a>
@@ -120,7 +121,7 @@ const Home = () => {
           <div className="text-center mb-12">
             <p className="text-sm text-gray-500 uppercase tracking-wider mb-2">Partners</p>
             <h2 className="text-4xl font-bold text-gray-900">Recognized by the best</h2>
-            <div className="w-24 h-1 bg-[#00A8E1] mx-auto mt-4"></div>
+            <div className="w-24 h-1 bg-[#2CB6E9] mx-auto mt-4"></div>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
               The company needed to complete a complex migration on a tight deadline to avoid millions of dollars in post-contract fees and fines.
             </p>
@@ -147,7 +148,7 @@ const Home = () => {
           <div className="text-center mt-8">
             <Link
               to="/partners"
-              className="inline-block bg-[#00A8E1] text-white px-8 py-3 rounded-md hover:bg-[#0088C1] transition-colors"
+              className="inline-block bg-[#2CB6E9] text-white px-8 py-3 rounded-md hover:bg-[#0088C1] transition-colors font-semibold"
             >
               View All Partners
             </Link>

@@ -4,52 +4,52 @@ export const services = [
   {
     id: 1,
     title: 'Refurbishment of existing buildings and structures',
-    link: 'mailto:info@artik.co.id'
+    link: 'mailto:info@anl.co.id'
   },
   {
     id: 2,
     title: 'Demolition',
-    link: 'mailto:info@artik.co.id'
+    link: 'mailto:info@anl.co.id'
   },
   {
     id: 3,
     title: 'Civil Engineering projects',
-    link: 'mailto:info@artik.co.id'
+    link: 'mailto:info@anl.co.id'
   },
   {
     id: 4,
     title: 'Reinforced concrete and steelwork',
-    link: 'mailto:info@artik.co.id'
+    link: 'mailto:info@anl.co.id'
   },
   {
     id: 5,
     title: 'Office and commercial "fit outs"',
-    link: 'mailto:info@artik.co.id'
+    link: 'mailto:info@anl.co.id'
   },
   {
     id: 6,
     title: 'Waterproofing',
-    link: 'mailto:info@artik.co.id'
+    link: 'mailto:info@anl.co.id'
   },
   {
     id: 7,
     title: 'Landscaping',
-    link: 'mailto:info@artik.co.id'
+    link: 'mailto:info@anl.co.id'
   },
   {
     id: 8,
     title: 'Building Maintenance',
-    link: 'mailto:info@artik.co.id'
+    link: 'mailto:info@anl.co.id'
   },
   {
     id: 9,
     title: 'Steel frame building',
-    link: 'mailto:info@artik.co.id'
+    link: 'mailto:info@anl.co.id'
   },
   {
     id: 10,
     title: 'Design & Consultant',
-    link: 'mailto:info@artik.co.id'
+    link: 'mailto:info@anl.co.id'
   }
 ];
 
